@@ -7,7 +7,7 @@ const Body = () => {
     
     const [listOfRestaurants , setListOfRestraunt] = useState([]);
     const [searchText , setSearchText] = useState("")
-    
+
     useEffect(() => {
          fetchData()
     } , []);
