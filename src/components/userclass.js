@@ -9,6 +9,10 @@ class userclass extends React.Component{
     };  
     }
 
+    componentDidMount() {
+         console.log()
+    }
+
     render() {
         const {name , location} = this.props;
         const {count } = this.state;
@@ -19,7 +23,6 @@ class userclass extends React.Component{
         <button onClick={() =>{
             this.setState({
                 count:this.state.count + 1,
-                
             });
         }
         }></button>
@@ -28,7 +31,6 @@ class userclass extends React.Component{
         <h4>contact : 9818823695</h4>
       </div>
     )
-
     }
 }
 
