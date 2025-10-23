@@ -5,10 +5,13 @@ const useOnlineStatus = () => {
 
     useEffect(() => { 
 
+        window.addEventListener("offline" , () => {
+            setOnlineStatus(false);
+        });
+
         window.addEventListener("online" , () => {
-
-        })
-
+            setOnlineStatus(true);
+        });
     } , []);
 
     return useOnlineStatus;

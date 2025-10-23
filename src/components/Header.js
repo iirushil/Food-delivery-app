@@ -1,5 +1,6 @@
 import {useState} from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useonlinestatus";
 
 const Header = () => {
 
@@ -13,6 +14,7 @@ const Header = () => {
                 src = "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6ab0bb223140421.67f3e2f76de70.jpg" />
             </div>
             <div className = "nav-items">
+                <li>Online status : {useOnlineStatus ? "🟢" : "🌹"}</li>
                 <ul>
                     <li>Home</li>
                     <li>About Us</li>
